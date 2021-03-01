@@ -11,6 +11,8 @@
 
 ```deb http://debian.opennms.org/ stable main```
 
+```wget -O - https://debian.opennms.org/OPENNMS-GPG-KEY | apt-key add -```
+
 If you dont like it saying:
 
 "Conflicting distribution: http://debian.opennms.org stable Release (expected stable but got opennms-26)"
