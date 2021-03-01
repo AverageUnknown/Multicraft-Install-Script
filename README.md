@@ -33,7 +33,7 @@ You will get an error, this is normal. After grabbing the key that error will go
 
 ### !WARNING! Set your FQDN to "localhost" during next step!
 
-```curl https://raw.githubusercontent.com/SudoUser-Sam/Multicraft-Install-Script/master/multicraftserver.sh?token=AGFPDLGZH243S4GZJOGNFHS62IJO2 > multicraftserver.sh&&bash ./multicraftserver.sh```
+```curl https://raw.githubusercontent.com/SudoUser-Sam/Multicraft-Install-Script/master/multicraftserver.sh?token=AGFPDLEBSCQHCGEPVDCH3PLAHTAEK > multicraftserver.sh&&bash ./multicraftserver.sh```
 
 
 ### After the script is over leave it open where it shows the passwords for the panel and daemon and open a new terminal
