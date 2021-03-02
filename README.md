@@ -60,7 +60,7 @@ To get php-mcrypt:
 
 ```sudo apt-get -y install gcc make autoconf libc-dev pkg-config```
 
-```sudo apt-get -y install php7.2-dev```
+```sudo apt-get -y install php7.4-dev```
 
 ```sudo apt-get -y install libmcrypt-dev```
 
