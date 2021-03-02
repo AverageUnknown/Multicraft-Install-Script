@@ -1,6 +1,8 @@
 ## DO NOT USE SSH TO DO THIS SCRIPT IT WILL FAIL
 
-## Compatible with Ubuntu 16.04, 18.04 and 20.04
+## Compatible with Ubuntu 18.04 and 20.04
+
+Potentially 16.04 also but untested.
 
 #### Open Terminal:
 
