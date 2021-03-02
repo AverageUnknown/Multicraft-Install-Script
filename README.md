@@ -1,6 +1,6 @@
 ## DO NOT USE SSH TO DO THIS SCRIPT IT WILL FAIL
 
-## Compatible with Ubuntu 16.04, 18.04
+## Compatible with Ubuntu 16.04, 18.04 and 20.04
 
 #### Open Terminal:
 
@@ -66,11 +66,11 @@ To get php-mcrypt:
 
 Once the dependencies have been installed, you can install mcrypt with this command:
 
-```sudo pecl install mcrypt-1.0.1```
+```sudo pecl install mcrypt-1.0.4```
 
 Then you need to add extension=mcrypt.so to your php.ini file:
 
-```sudo nano /etc/php/7.2/apache2/php.ini```
+```sudo nano /etc/php/7.4/apache2/php.ini```
 
 press f6
 
