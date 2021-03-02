@@ -21,12 +21,6 @@ Do this instead: ```deb http://debian.opennms.org/ opennms-26 main``` But be awa
 
 ```apt-get update```
 
-You will get an error, this is normal. After grabbing the key that error will go away.
-
-```wget -O - http://debian.opennms.org/OPENNMS-GPG-KEY | sudo apt-key add -```
-
-```apt-get update```
-
 ```apt-get install oracle-java8-installer -y```
 
 #### (Dont ever run OpenJDK with minecraft clients or servers, it works but the GC is different and is generally frowned upon and some plugins dont get along with it.)
