@@ -1,14 +1,14 @@
 [Unit]
-Description=multicraft
-After=network.target
+Description=Multicraft Daemon
+Wants=network-online.target
+After=network.target remote-fs.target nss-lookup.target network-online.target mysql.service
 
 [Service]
-User=root
-Group=root
-Type=simple
-WorkingDirectory=/home/USER/Desktop/
-ExecStart=/bin/bash /home/USER/Desktop/multicraft.sh
+Type=forking
+PIDFile=/home/minecraft/multicraft/multicraft.pid
+ExecStart=/home/minecraft/multicraft/bin/multicraft -v start
+ExecReload=/home/minecraft/multicraft/bin/multicraft -v restart
+ExecStop=/home/minecraft/multicraft/bin/multicraft -v stop
 
 [Install]
 WantedBy=multi-user.target
-
