@@ -109,9 +109,8 @@ mysql -uroot -p${PW} -e "CREATE USER ${DAEMONDB}@localhost IDENTIFIED BY '${DPAS
 mysql -uroot -p${PW} -e "GRANT ALL PRIVILEGES ON ${DAEMONDB}.* TO '${DAEMONDB}'@'localhost';"
 mysql -uroot -p${PW} -e "FLUSH PRIVILEGES;"
 
-mysql -uroot -p${PW} -e "CREATE DATABASE multicrafdb /*\!40100 DEFAULT CHARACTER SET utf8 */;"
 mysql -uroot -p${PW} -e "CREATE USER multicrafdb@localhost IDENTIFIED BY '${PW}';"
-mysql -uroot -p${PW} -e "GRANT ALL PRIVILEGES ON multicrafdb.* TO '${PW}'@'localhost';"
+mysql -uroot -p${PW} -e "GRANT ALL ON *.* TO 'multicrafdb'@'localhost';"
 mysql -uroot -p${PW} -e "FLUSH PRIVILEGES;"
 
 
