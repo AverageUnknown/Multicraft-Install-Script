@@ -109,6 +109,12 @@ mysql -uroot -p${PW} -e "CREATE USER ${DAEMONDB}@localhost IDENTIFIED BY '${DPAS
 mysql -uroot -p${PW} -e "GRANT ALL PRIVILEGES ON ${DAEMONDB}.* TO '${DAEMONDB}'@'localhost';"
 mysql -uroot -p${PW} -e "FLUSH PRIVILEGES;"
 
+mysql -uroot -p${PW} -e "CREATE DATABASE multicrafdb /*\!40100 DEFAULT CHARACTER SET utf8 */;"
+mysql -uroot -p${PW} -e "CREATE USER multicrafdb@localhost IDENTIFIED BY '${PW}';"
+mysql -uroot -p${PW} -e "GRANT ALL PRIVILEGES ON multicrafdb.* TO '${PW}'@'localhost';"
+mysql -uroot -p${PW} -e "FLUSH PRIVILEGES;"
+
+
 cd ~&&mkdir MulticraftInstllation;cd MulticraftInstllation
 
 wget https://www.multicraft.org/download/linux64 -O multicraft.tar.gz&&tar xvzf multicraft.tar.gz
@@ -154,11 +160,11 @@ send \"\r\"
 expect \"What kind of database do you want to use?\"
 send \"mysql\r\"
 expect \"Database host:\"
-send \"\r\"
+send \"127.0.0.1\r\"
 expect \"Database name:\"
-send \"\r\"
+send \"multicrafdb\r\"
 expect \"Database user:\"
-send \"\r\"
+send \"multicrafdb\r\"
 expect \"Database password:\"
 send \"$PW\r\"
 expect \"Path to java program:\"
