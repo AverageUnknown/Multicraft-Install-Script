@@ -111,7 +111,7 @@ mysql -uroot -p${PW} -e "FLUSH PRIVILEGES;"
 
 cd ~&&mkdir MulticraftInstllation;cd MulticraftInstllation
 
-wget https://www.multicraft.org/download/linux64 -O multicraft.tar.gz&&tar xvzf multicraft.tar.gz
+wget http://www.multicraft.org/download/linux64?version=preview -O multicraft.tar.gz&&tar xvzf multicraft.tar.gz
 
 cd multicraft
 
