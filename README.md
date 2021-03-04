@@ -134,4 +134,12 @@ password= YOURPASSWORD
 'daemon_password' => 'YOUR PASSWORD',
 ```
 
+If phpmyadmin does not want to load run this:
+
+```sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf```
+
+```sudo a2enconf phpmyadmin```
+
+```sudo systemctl reload apache2```
+
 Done.
